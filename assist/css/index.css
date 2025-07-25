@@ -6,6 +6,10 @@
     --light-bg: #f7f7ff;
     --light-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     --border-radius: 8px;
+    --bs-primary: #0056b3;
+    --bs-primary-rgb: 0, 86, 179;
+    --bs-primary-bg-subtle: #e0f2ff;
+    --bs-primary-text-emphasis: #003d80;
     --main-font: 'Montserrat', sans-serif;
 }
 
@@ -671,4 +675,41 @@ main {
 
 .our-clint .section-title::after {
     left: 40%;
+}
+
+/*  */
+.icon-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bs-primary-bg-subtle);
+    /* Using Bootstrap's primary color tint */
+    color: var(--bs-primary);
+    flex-shrink: 0;
+    /* Prevent shrinking in flex container */
+}
+
+.card-custom {
+    border: 1px solid var(--bs-border-color);
+    transition: all 0.3s ease;
+}
+
+.card-custom:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    /* Bootstrap shadow-md equivalent */
+    border-color: var(--bs-primary);
+    /* Uses the new primary color */
+}
+
+/* Adjusting card content padding */
+.card-body-custom {
+    padding-top: 0;
+}
+
+/* Ensure heading uses the new primary color */
+.text-primary {
+    color: var(--bs-primary) !important;
 }
