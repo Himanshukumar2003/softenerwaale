@@ -203,7 +203,7 @@ iframe {
 }
 
 .feature-card:hover {
-    background-color: #007bff;
+    background-color: #0056b3;
     color: #fff;
 }
 
@@ -702,7 +702,14 @@ main {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
     /* Bootstrap shadow-md equivalent */
     border-color: var(--bs-primary);
+    background-color: #0056b3;
+    color: white;
     /* Uses the new primary color */
+}
+
+
+.card-custom:hover p {
+    color: white !important;
 }
 
 /* Adjusting card content padding */
