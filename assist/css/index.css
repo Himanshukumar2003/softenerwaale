@@ -46,18 +46,21 @@ section {
 }
 
 .ecowell-feature .icon-wrapper {
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     display: flex;
+    border: 2px solid #007bff;
+    border-radius: 50%;
     align-items: center;
     justify-content: center;
     margin: 0 auto 20px;
-    /* Light blue background */
 }
 
-.ecowell-feature .icon-wrapper img {
+.ecowell-feature .icon-wrapper i {
     width: 100%;
     mix-blend-mode: multiply;
+    color: #007bff;
+    font-size: 30px;
 
 }
 
@@ -720,4 +723,246 @@ main {
 /* Ensure heading uses the new primary color */
 .text-primary {
     color: var(--bs-primary) !important;
+}
+
+
+/*  */
+.review-card {
+    background-color: #fff;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    /* lighter shadow */
+    padding: 1.8rem 1.5rem;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.avatar-container {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 5px;
+    margin-top: -50px;
+    margin-bottom: 1.25rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #eaeaea;
+}
+
+.star-rating {
+    color: #ffc107;
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+}
+
+.review-title {
+    font-size: 1.15rem;
+    font-weight: 500;
+    /* reduced weight */
+    color: #1f2937;
+    margin-bottom: 0.7rem;
+}
+
+.review-text {
+    font-size: 0.95rem;
+    color: #4b5563;
+    line-height: 1.6;
+    flex-grow: 1;
+    margin-bottom: 1rem;
+    padding: 0 0.5rem;
+}
+
+.reviewer-name {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #111827;
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid #f1f1f1;
+    width: 100%;
+}
+
+
+.product-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /* Ensure it takes full height of its column */
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.product-feature-item {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+.product-feature-icon {
+    width: 50px;
+    height: 50px;
+    /* Makes the icon white */
+}
+
+.feature-text {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #333;
+    line-height: 1.3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+
+    /* For tablets and smaller */
+    .product-image-container {
+        margin-bottom: 3rem;
+    }
+}
+
+.product-features-card {
+    text-align: center;
+    width: 100%;
+}
+
+.section-container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.main-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #212529;
+    margin-bottom: 2rem;
+}
+
+.resin-tech-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #007bff;
+    /* Bootstrap primary blue */
+    margin-bottom: 1rem;
+}
+
+.resin-tech-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #495057;
+}
+
+.highlight {
+    color: #2C57B3;
+    /* A light green color similar to the image */
+    font-weight: 700;
+}
+
+.feature-box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    /* Ensure boxes align vertically */
+}
+
+.feature-box .small-heading {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #212529;
+    margin-bottom: 1rem;
+}
+
+.feature-box .large-text {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+
+.vertical-separator {
+    border-left: 1px solid #e9ecef;
+    /* Light gray border */
+    height: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+
+    /* For tablets and smaller */
+    .main-title {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .resin-tech-heading {
+        font-size: 1.25rem;
+    }
+
+    .feature-box {
+        margin-top: 3rem;
+        /* Add space between sections on smaller screens */
+    }
+
+    .vertical-separator {
+        border-left: none;
+        border-top: 1px solid #e9ecef;
+        width: 80%;
+        margin: 3rem auto;
+        height: auto;
+    }
+}
+
+
+.feature-box {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    height: 100%;
+    background-color: #2C57B3;
+    border-radius: 20px;
+    color: white;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.active .highlight-green {
+    color: white !important;
+}
+
+.ecowell-feature:hover {
+    background-color: #abc6f8;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ecowell-feature {
+
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 20px;
 }
