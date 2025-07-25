@@ -13,6 +13,195 @@
     --main-font: 'Montserrat', sans-serif;
 }
 
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+
+.hero-section {
+    display: flex;
+    padding-top: 120px;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/assist/img/Mini-Soft-jpg.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /* Add some padding for smaller screens */
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5);
+    /* White overlay for text readability */
+}
+
+
+.left-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.left-image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.content-wrapper {
+    position: relative;
+    z-index: 99;
+}
+
+.right-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.brand-text {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.main-heading {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    color: #343a40;
+}
+
+.demo-link {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #007bff;
+    /* Bootstrap primary blue */
+    text-decoration: none;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.form-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    /* border: 2px solid #007bff; */
+    /* Pink border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-label {
+    font-weight: 600;
+    color: #343a40;
+    font-size: 0.9rem;
+}
+
+.form-control {
+    border-radius: 8px;
+    padding: 10px 15px;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+
+.input-group-text {
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-left: none;
+    border-radius: 0 8px 8px 0;
+    padding: 10px 15px;
+}
+
+.input-group .form-control:first-child {
+    border-radius: 8px 0 0 8px;
+}
+
+.error-message {
+    color: #dc3545;
+    /* Bootstrap danger red */
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
+
+.btn-book-demo {
+    background-color: #004085;
+    /* Darker blue for the button */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.btn-book-demo:hover {
+    background-color: #0056b3;
+}
+
+.flag-icon {
+    width: 24px;
+    /* Adjust size as needed */
+    height: auto;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .main-heading {
+        font-size: 2.5rem;
+    }
+
+    .hero-section {
+        padding: 50px 0;
+    }
+
+    .content-wrapper {
+        padding: 20px;
+    }
+
+    .left-image-container {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .main-heading {
+        font-size: 2rem;
+    }
+
+    .demo-link {
+        font-size: 1rem;
+    }
+
+    .form-card {
+        padding: 20px;
+    }
+
+    .left-image-container {
+        padding: 0;
+    }
+}
+
 section {
     padding: 60px 0;
     background-color: #fff;
@@ -273,7 +462,7 @@ iframe {
 }
 
 .header-item-left img {
-    max-width: 150px;
+    width: 200px;
 }
 
 .header-item-center {
@@ -296,7 +485,7 @@ iframe {
 .header .menu>ul>li>a {
     position: relative;
     font-family: inherit;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.25;
     border: none;
